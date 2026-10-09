@@ -1,11 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.text}>GameHub is setting up...</Text>
+      <StatusBar style="light" />
     </View>
   );
 }
@@ -13,8 +14,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#0F172A',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  text: {
+    color: '#F8FAFC',
+    fontSize: 18,
+    fontWeight: '600',
   },
 });
